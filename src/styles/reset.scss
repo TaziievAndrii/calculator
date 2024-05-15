@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: $primary;
+  color: $light;
+}
+
+
+input, button {
+  font-family: 'Inter Tight', sans-serif;
+  border: none;
+  background: none;
+  outline: none;
+  color: $light;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+
