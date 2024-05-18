@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { evaluate } from 'mathjs';
 
 const initialState = {
     input: '',
@@ -18,7 +19,7 @@ export const calculatorSlice = createSlice({
         },
         calculate: (state) => {
             try {
-                const result = eval(state.input);
+                const result = evaluate(state.input);
                 state.result = Number.isFinite(result) ? result.toFixed(10) : 'Error';
             } catch (error) {
                 state.result = 'Error';
